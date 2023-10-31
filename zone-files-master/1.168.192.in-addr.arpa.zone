@@ -1,0 +1,21 @@
+$TTL 1h
+
+@	IN	SOA	1.168.192.in-addr.arpa.	root.ancr.com. (
+				20231024
+				24h	
+				2h	
+				28d	
+				2d )
+
+;Name servers
+
+@	IN	NS	ns1.ancr.com.
+@	IN	NS	ns2.ancr.com.
+
+;PTR records
+
+122	IN	PTR	ns1.ancr.com.
+131	IN	PTR	ns2.ancr.com.
+139	IN	PTR	mail-01
+209	IN	PTR	web-01
+

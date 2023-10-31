@@ -1,0 +1,27 @@
+$TTL 3h
+
+;Start of authority
+
+@	IN	SOA	ns1.ancr.com.	root.ancr.com.	(
+				20231024
+				1d
+				1h	
+				1w	
+				3h )
+
+;Name servers
+@	IN 	NS	ns1.ancr.com.
+@	IN	NS	ns2.ancr.com.
+
+;Mail servers
+@	IN	MX	0	mail-01
+
+;Aliases
+ns1	IN	A	192.168.1.122
+ns2	IN	A	192.168.1.122
+web-01	IN	A	192.168.1.209
+mail-01	IN	A	192.168.1.139
+
+;Canonical Names
+www	IN	CNAME	web-01
+mail	IN	CNAME	mail-01
